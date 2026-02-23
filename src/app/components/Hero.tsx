@@ -69,9 +69,9 @@ function GeometricIllustration() {
 
         {/* Lead cards */}
         {[
-          { name: "Petra Kovářová", project: "Full kitchen remodel", status: "Hot lead", dot: "#22C55E" },
-          { name: "Martin Šimek", project: "Cabinet upgrade + island", status: "Scheduled call", dot: "#2563EB" },
-          { name: "Lucia Blaho", project: "Open-plan kitchen design", status: "New inquiry", dot: "#F59E0B" },
+          { name: "Sarah Mitchell", project: "Full kitchen remodel", status: "Hot lead", dot: "#22C55E" },
+          { name: "James Carter", project: "Cabinet upgrade + island", status: "Scheduled call", dot: "#2563EB" },
+          { name: "Emily Ross", project: "Open-plan kitchen design", status: "New inquiry", dot: "#F59E0B" },
         ].map((lead) => (
           <div
             key={lead.name}
@@ -216,7 +216,7 @@ export function Hero() {
                     ))}
                   </div>
                   <p className="text-[#6B7280]" style={{ fontSize: 12 }}>
-                    Trusted by 12+ kitchen studios across Europe
+                    Trusted by 12+ companies across EU
                   </p>
                 </div>
               </div>

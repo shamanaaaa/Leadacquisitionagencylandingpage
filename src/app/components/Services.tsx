@@ -41,11 +41,10 @@ function DashboardMockup() {
       {/* Rows */}
       <div className="divide-y divide-[#F3F4F6]">
         {[
-          { label: "Ad Impressions", value: "24,810", change: "+12%", up: true },
-          { label: "Landing Page Clicks", value: "1,043", change: "+8%", up: true },
-          { label: "Form Completions", value: "89", change: "+23%", up: true },
-          { label: "Qualified Inquiries", value: "47", change: "+31%", up: true },
-          { label: "Cost per Inquiry", value: "€14.20", change: "-6%", up: false },
+          { label: "Ad Impressions", value: "2,945", change: "+12%", up: true },
+          { label: "Landing Page Clicks", value: "233", change: "+8%", up: true },
+          { label: "Qualified Inquiries", value: "7", change: "+31%", up: true },
+          { label: "Cost per Inquiry", value: "€34.45", change: "-6%", up: false },
         ].map((row) => (
           <div key={row.label} className="px-6 py-4 flex items-center justify-between">
             <span className="text-[#6B7280]" style={{ fontSize: 13, fontWeight: 500 }}>
@@ -72,16 +71,10 @@ function DashboardMockup() {
       </div>
 
       {/* Footer bar */}
-      <div className="px-6 py-4 bg-[#F9FAFB] flex items-center justify-between border-t border-[#E5E7EB]">
+      <div className="px-6 py-4 bg-[#F9FAFB] border-t border-[#E5E7EB]">
         <span className="text-[#9CA3AF]" style={{ fontSize: 12 }}>
           Last 30 days
         </span>
-        <div className="flex items-center gap-1.5">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
-          <span className="text-[#2563EB]" style={{ fontSize: 12, fontWeight: 600 }}>
-            View full report →
-          </span>
-        </div>
       </div>
     </div>
   );

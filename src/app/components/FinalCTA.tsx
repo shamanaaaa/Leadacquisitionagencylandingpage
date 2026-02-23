@@ -62,7 +62,7 @@ export function FinalCTA() {
 
         {/* CTA Button */}
         <a
-          href="mailto:hello@agsiteleveled.com?subject=Strategy Call Request"
+          href="mailto:lukas@siteleveled.com?subject=Strategy Call Request"
           className="inline-flex items-center gap-3 border-2 border-white text-white px-10 rounded-xl hover:bg-white hover:text-[#111827] transition-all duration-300 group"
           style={{ fontSize: 16, fontWeight: 700, height: 58 }}
         >

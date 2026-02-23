@@ -2,7 +2,7 @@ export function About() {
   const stats = [
     { value: "12+", label: "Companies Served" },
     { value: "3+", label: "Years of Experience" },
-    { value: "€3,000+", label: "Revenue Generated" },
+    { value: "2–4 wks", label: "Avg. Project Finished" },
   ];
 
   return (

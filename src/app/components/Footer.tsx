@@ -33,11 +33,11 @@ export function Footer() {
 
             {/* Contact */}
             <a
-              href="mailto:hello@agsiteleveled.com"
+              href="mailto:lukas@siteleveled.com"
               className="text-[#9CA3AF] hover:text-white transition-colors"
               style={{ fontSize: 13, fontWeight: 500 }}
             >
-              hello@agsiteleveled.com
+              lukas@siteleveled.com
             </a>
           </div>
 

@@ -1,23 +1,23 @@
 const reviews = [
   {
     quote:
-      "Before AgSiteLeveled, we were chasing referrals and hoping the phone would ring. Now we have a steady stream of qualified inquiries every week. The system just works.",
+      "Excellent communication and professional approach. Exactly what we were looking for — fast, clear, and without complications.",
     name: "Zuzana K.",
-    company: "Kitchen Studio Bratislava",
+    company: "Zuzu Photo (Photographic studio)",
     initials: "ZK",
   },
   {
     quote:
-      "I was skeptical about paid ads for our type of business. But the landing page and messaging they created were spot-on — our inquiry quality has never been this high.",
+      "His strategy completely changed our results. Within two weeks, we doubled our ad clicks and attracted more serious clients.",
     name: "Imrich B.",
-    company: "KABANO Kitchens",
+    company: "Gooddentist (Dental clinic)",
     initials: "IB",
   },
   {
     quote:
-      "Within the first month we had more qualified leads than the entire previous quarter. The team is professional, responsive, and actually understands our market.",
+      "We generated over €3,000 in revenue from a €300–400 ad spend in just one month. Very satisfied and would work with him again.",
     name: "Slavka R.",
-    company: "Cottonblush Interiors",
+    company: "VITAJTE-DOMA (Home design studio)",
     initials: "SR",
   },
 ];
