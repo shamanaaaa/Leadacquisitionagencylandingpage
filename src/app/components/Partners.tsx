@@ -36,17 +36,30 @@ export function Partners() {
           ))}
         </div>
 
-        {/* Mobile scroll */}
-        <div className="md:hidden flex gap-8 overflow-x-auto pb-2 scrollbar-hide">
-          {partners.map((p, i) => (
-            <span
-              key={i}
-              className="text-[#9CA3AF] whitespace-nowrap shrink-0"
-              style={{ fontSize: 14, fontWeight: p.weight }}
-            >
-              {p.name}
-            </span>
-          ))}
+        {/* Mobile grid - 4 top row, 3 bottom row */}
+        <div className="md:hidden">
+          <div className="grid grid-cols-4 gap-x-2 gap-y-5 mb-5">
+            {partners.slice(0, 4).map((p, i) => (
+              <span
+                key={i}
+                className="text-[#9CA3AF] text-center"
+                style={{ fontSize: 11, fontWeight: p.weight }}
+              >
+                {p.name}
+              </span>
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-x-2">
+            {partners.slice(4).map((p, i) => (
+              <span
+                key={i}
+                className="text-[#9CA3AF] text-center"
+                style={{ fontSize: 11, fontWeight: p.weight }}
+              >
+                {p.name}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

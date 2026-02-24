@@ -1,3 +1,19 @@
+// To add photos: set the `photo` field to the image path, e.g. photo: "/lukas.jpg"
+const teamMembers = [
+  {
+    name: "Lukas D.",
+    role: "Project Management & Co-owner",
+    initials: "LD",
+    photo: "",
+  },
+  {
+    name: "Mario D.",
+    role: "Developer & Co-owner",
+    initials: "MD",
+    photo: "",
+  },
+];
+
 export function About() {
   const stats = [
     { value: "12+", label: "Companies Served" },
@@ -15,71 +31,66 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Content */}
           <div className="flex flex-col gap-6">
-            <p
-              className="text-[#2563EB] uppercase tracking-widest"
-              style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em" }}
-            >
-              About Us
-            </p>
             <h2
               className="text-[#111827]"
               style={{ fontSize: "clamp(28px, 3.5vw, 36px)", fontWeight: 700, letterSpacing: "-0.6px", lineHeight: 1.25 }}
             >
-              Behind every system is a real person.
+              About Us
             </h2>
             <p className="text-[#6B7280]" style={{ fontSize: 16, lineHeight: 1.75 }}>
-              AgSiteLeveled was built by someone who understands the challenge of growing a local service business without a predictable source of quality inquiries. We don't do one-size-fits-all marketing. We build tailored inquiry-acquisition systems that match your studio, your market, and the type of projects you actually want to take on.
+              We understand the challenge of growing a local service business. That's why we don't do one-size-fits-all marketing.
             </p>
             <p className="text-[#6B7280]" style={{ fontSize: 16, lineHeight: 1.75 }}>
-              We operate with full transparency — you always know what's running, why it's running, and what results it's producing. No jargon, no fluff, just a working system that brings the right people to your door.
+              With more than 12 EU projects behind us, we have the experience of building tailored systems that match your market and the type of projects you actually want to take on.
             </p>
           </div>
 
           {/* Right — Card */}
           <div className="flex flex-col gap-6">
-            {/* Profile card */}
+            {/* Team card */}
             <div
               className="rounded-2xl p-8"
               style={{ background: "#fff", border: "1px solid #E5E7EB", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}
             >
-              <div className="flex items-center gap-5 mb-6">
-                {/* Avatar circle */}
-                <div className="relative">
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center"
-                    style={{ background: "linear-gradient(135deg, #DBEAFE, #BFDBFE)" }}
-                  >
-                    <span className="text-[#2563EB]" style={{ fontSize: 24, fontWeight: 700 }}>
-                      A
-                    </span>
-                  </div>
-                  <div
-                    className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#22C55E] border-2 border-white flex items-center justify-center"
-                  >
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-[#111827]" style={{ fontSize: 18, fontWeight: 700 }}>
-                    Ag-SiteLeveled
-                  </p>
-                  <p className="text-[#6B7280]" style={{ fontSize: 14, fontWeight: 500 }}>
-                    Inquiry Acquisition Specialist
-                  </p>
-                  {/* Blue accent underline */}
-                  <div className="mt-2 w-12 h-0.5 bg-[#2563EB] rounded-full" />
-                </div>
-              </div>
-
-              {/* Quote */}
-              <blockquote
-                className="text-[#374151] italic border-l-2 border-[#2563EB] pl-4"
-                style={{ fontSize: 15, lineHeight: 1.7 }}
+              <p
+                className="text-[#2563EB] uppercase tracking-widest mb-5"
+                style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.14em" }}
               >
-                "We focus entirely on one thing: filling your calendar with real, high-intent kitchen inquiries. Everything else is noise."
-              </blockquote>
+                Our Team
+              </p>
+
+              <div className="flex flex-col gap-5">
+                {teamMembers.map((member) => (
+                  <div key={member.name} className="flex items-center gap-4">
+                    {/* Avatar */}
+                    <div
+                      className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 overflow-hidden"
+                      style={{ background: "linear-gradient(135deg, #DBEAFE, #BFDBFE)" }}
+                    >
+                      {member.photo ? (
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <span className="text-[#2563EB]" style={{ fontSize: 16, fontWeight: 700 }}>
+                          {member.initials}
+                        </span>
+                      )}
+                    </div>
+                    {/* Info */}
+                    <div>
+                      <p className="text-[#111827]" style={{ fontSize: 15, fontWeight: 700 }}>
+                        {member.name}
+                      </p>
+                      <p className="text-[#6B7280]" style={{ fontSize: 13, fontWeight: 500 }}>
+                        {member.role}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Stats row */}

@@ -57,7 +57,7 @@ export function FinalCTA() {
           className="text-[#9CA3AF] mb-10 max-w-lg mx-auto"
           style={{ fontSize: 17, lineHeight: 1.75 }}
         >
-          We'll review your current situation and see if we can help. No pressure. No obligation. Just a clear picture of where you stand.
+          We'll review your current situation, provide free strategic insights and see if we can help. No obligation.
         </p>
 
         {/* CTA Button */}

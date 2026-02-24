@@ -9,13 +9,13 @@ const steps = [
     number: "02",
     title: "System Build",
     description:
-      "We build your custom inquiry system: ad campaigns, a dedicated landing page, and conversion-focused messaging tailored to your studio.",
+      "After recommending a tailored solution to your needs, we take care of the technical difficulties of setting it all up.",
   },
   {
     number: "03",
     title: "Launch",
     description:
-      "Your system goes live. We monitor, optimise, and report results clearly — so you always know what's working and what's coming in.",
+      "The recommended solution goes live. We monitor, optimise, and report results clearly — so you always know what's working and what's coming in.",
   },
 ];
 

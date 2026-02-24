@@ -8,16 +8,6 @@ const faqs = [
       "Most clients start seeing qualified inquiries within the first 2–4 weeks of launch. The first week focuses on setup and campaign calibration, and by week two you should see initial traffic and form submissions.",
   },
   {
-    question: "Do you work with kitchen studios in any country?",
-    answer:
-      "Currently we work primarily with kitchen studios and remodelers across Central and Eastern Europe, though we are open to discussing other markets. Our ad experience spans Slovakia, Czech Republic, Austria, and Germany.",
-  },
-  {
-    question: "What does the monthly retainer include?",
-    answer:
-      "Your retainer covers ongoing ad management (Google & Meta), landing page optimisation, weekly performance reports, and direct access to our team via Slack or email. Ad spend is billed separately.",
-  },
-  {
     question: "What if I already have an agency running my ads?",
     answer:
       "We're happy to audit what's currently running and provide an honest assessment. Many clients come to us after underwhelming results elsewhere. We can take over existing campaigns or start fresh.",
@@ -25,7 +15,7 @@ const faqs = [
   {
     question: "Is there a long-term contract?",
     answer:
-      "We work on a monthly rolling basis with a minimum commitment of 3 months to allow sufficient time to optimise the system properly. After that, you can continue month-to-month with 30 days notice.",
+      "We work on a monthly rolling basis with a minimum commitment of 3 months to allow sufficient time to optimise the system properly. After that, you can continue month-to-month with 30 days' notice.",
   },
 ];
 
