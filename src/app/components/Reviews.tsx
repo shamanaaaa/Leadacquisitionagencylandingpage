@@ -1,3 +1,7 @@
+import zuzPhoto from "../../images/Zuz K.png";
+import imrichPhoto from "../../images/Imrich B.png";
+import slavkaPhoto from "../../images/Slavka R.png";
+
 const reviews = [
   {
     quote:
@@ -5,6 +9,7 @@ const reviews = [
     name: "Zuzana K.",
     company: "Zuzu Photo (Photographic studio)",
     initials: "ZK",
+    photo: zuzPhoto,
   },
   {
     quote:
@@ -12,6 +17,7 @@ const reviews = [
     name: "Imrich B.",
     company: "Gooddentist (Dental clinic)",
     initials: "IB",
+    photo: imrichPhoto,
   },
   {
     quote:
@@ -19,6 +25,7 @@ const reviews = [
     name: "Slavka R.",
     company: "VITAJTE-DOMA (Home design studio)",
     initials: "SR",
+    photo: slavkaPhoto,
   },
 ];
 
@@ -85,12 +92,20 @@ export function Reviews() {
 
                 <div className="flex items-center gap-3 pt-2 border-t border-[#F3F4F6]">
                   <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
+                    className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 overflow-hidden"
                     style={{ background: "#EFF6FF" }}
                   >
-                    <span className="text-[#2563EB]" style={{ fontSize: 13, fontWeight: 700 }}>
-                      {r.initials}
-                    </span>
+                    {r.photo ? (
+                      <img
+                        src={r.photo}
+                        alt={r.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-[#2563EB]" style={{ fontSize: 13, fontWeight: 700 }}>
+                        {r.initials}
+                      </span>
+                    )}
                   </div>
                   <div>
                     <p className="text-[#111827]" style={{ fontSize: 14, fontWeight: 700 }}>

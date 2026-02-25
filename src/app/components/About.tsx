@@ -1,16 +1,18 @@
-// To add photos: set the `photo` field to the image path, e.g. photo: "/lukas.jpg"
+import lukasPhoto from "../../images/Lukas D..jpeg";
+import marioPhoto from "../../images/Mario D..jpg";
+
 const teamMembers = [
   {
     name: "Lukas D.",
     role: "Project Management & Co-owner",
     initials: "LD",
-    photo: "",
+    photo: lukasPhoto,
   },
   {
     name: "Mario D.",
     role: "Developer & Co-owner",
     initials: "MD",
-    photo: "",
+    photo: marioPhoto,
   },
 ];
 
