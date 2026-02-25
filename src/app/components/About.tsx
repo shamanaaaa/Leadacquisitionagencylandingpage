@@ -4,13 +4,13 @@ import marioPhoto from "../../images/Mario D..jpg";
 const teamMembers = [
   {
     name: "Lukas D.",
-    role: "Project Management & Co-owner",
+    role: "Project Manager",
     initials: "LD",
     photo: lukasPhoto,
   },
   {
     name: "Mario D.",
-    role: "Developer & Co-owner",
+    role: "Developer",
     initials: "MD",
     photo: marioPhoto,
   },
